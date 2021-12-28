@@ -31,17 +31,12 @@ import androidx.annotation.NonNull;
  * See the documentation for the full rich set of annotations.
  * https://developer.android.com/topic/libraries/architecture/room.html
  */
-
 @Entity(tableName = "word_table")
 public class Word {
-
     @PrimaryKey
     @NonNull
     @ColumnInfo(name = "word")
     private String mWord;
-
-    public Word(@NonNull String word) {
-        this.mWord = word;}
-
+    public Word(@NonNull String word) {this.mWord = word;}
     public String getWord(){return this.mWord;}
 }

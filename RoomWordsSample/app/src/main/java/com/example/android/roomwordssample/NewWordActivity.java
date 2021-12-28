@@ -27,12 +27,11 @@ import android.widget.EditText;
 /**
  * Activity for entering a word.
  */
-
 public class NewWordActivity extends AppCompatActivity {
+    public static final String EXTRA_REPLY =
+            "com.example.android.roomwordssample.REPLY";
 
-    public static final String EXTRA_REPLY = "com.example.android.roomwordssample.REPLY";
-
-    private  EditText mEditWordView;
+    private EditText mEditWordView;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -54,6 +53,4 @@ public class NewWordActivity extends AppCompatActivity {
                 finish();
             }
         });
-    }
-}
-
+    }}
